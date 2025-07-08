@@ -1,35 +1,50 @@
-/* tab size */
-.zen-essentials-container {
-	grid-template-columns: repeat(auto-fit, minmax(80px, auto)) !important;
-}
+/**
+* Zen Mod: Big Essentials
+* Adjustable icon sizes and padding for the essentials container.
+*/
+@-moz-document url-prefix("chrome:") {
+  :root {
+    /**
+    --zen-big_essentials-icon_padding: 12px;
+    --zen-big_essentials-icon_size: 28px;
+    --zen-big_essentials-reload_icon_size: 28px;
+    --zen-big_essentials-tab_min_width: 80px;
+    /**/
+  }
 
-/* icon padding */
-.zen-essentials-container
-	> tab
-	> stack:nth-child(1)
-	> hbox:nth-child(2)
-	> stack:nth-child(2) {
-	padding: 12px !important;
-}
+  /* tab size */
+  .zen-essentials-container {
+    grid-template-columns: repeat(auto-fit, minmax(var(--zen-big_essentials-tab_min_width), auto)) !important;
+  }
 
-/* main icon */
-.zen-essentials-container
-	> tab
-	> stack:nth-child(1)
-	> hbox:nth-child(2)
-	> stack:nth-child(2)
-	> img:nth-child(3) {
-	height: 28px !important;
-	width: 28px !important;
-}
+  /* icon padding */
+  .zen-essentials-container
+    > tab
+    > stack:nth-child(1)
+    > hbox:nth-child(2)
+    > stack:nth-child(2) {
+    padding: var(--zen-big_essentials-icon_padding) !important;
+  }
 
-/* reload icon */
-.zen-essentials-container
-	> tab
-	> stack:nth-child(1)
-	> hbox:nth-child(2)
-	> stack:nth-child(2)
-	> hbox:nth-child(1) {
-	height: 28px !important;
-	width: 28px !important;
+  /* main icon */
+  .zen-essentials-container
+    > tab
+    > stack:nth-child(1)
+    > hbox:nth-child(2)
+    > stack:nth-child(2)
+    > img:nth-child(3) {
+    height: var(--zen-big_essentials-icon_size) !important;
+    width: var(--zen-big_essentials-icon_size) !important;
+  }
+
+  /* reload icon */
+  .zen-essentials-container
+    > tab
+    > stack:nth-child(1)
+    > hbox:nth-child(2)
+    > stack:nth-child(2)
+    > hbox:nth-child(1) {
+    height: var(--zen-big_essentials-reload_icon_size) !important;
+    width: var(--zen-big_essentials-reload_icon_size) !important;
+  }
 }

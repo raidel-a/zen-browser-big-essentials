@@ -1,0 +1,30 @@
+[
+  {
+    "label": "Icon Container Padding",
+    "defaultValue": "12px",
+    "placeholder": "10px",
+    "property": "zen.big_essentials.icon_padding",
+    "type": "string"
+  },
+  {
+    "label": "Main Icon Size",
+    "defaultValue": "28px",
+    "placeholder": "24px",
+    "property": "zen.big_essentials.icon_size",
+    "type": "string"
+  },
+  {
+    "label": "Reload Icon Size",
+    "defaultValue": "28px",
+    "placeholder": "24px",
+    "property": "zen.big_essentials.reload_icon_size",
+    "type": "string"
+  },
+  {
+    "label": "Tab Minimum Width",
+    "defaultValue": "80px",
+    "placeholder": "60px",
+    "property": "zen.big_essentials.tab_min_width",
+    "type": "string"
+  }
+]
